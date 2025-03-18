@@ -1,0 +1,281 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    color: silver;
+}
+body *{
+    box-sizing: border-box;
+}
+#background-image{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+#div-top{
+    width: 100%;
+    overflow: visible;
+}
+#div-left{
+    position: sticky;
+    top: 0;
+    float: left;
+    width: 310px;
+    overflow: hidden;
+    height: 100vh;
+}
+#div-right{
+    float: left;
+    width: calc(100% - 310px);
+}
+#div-bottom{
+    clear: both;
+    width: 100%;
+}
+header, article, nav, footer{
+    border: 1px solid rgb(70, 70, 70);
+    background-color: rgba(35, 35, 35, 65%);
+    border-radius: 0 0 30px 0;
+    box-shadow: 0 0 10px black;
+}
+header{
+    width:94vw;
+    background-color: rgba(9, 9, 9, 65%);
+}
+nav{
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+    border-top: none;
+}
+article{
+    width: calc(86% - 6vw);
+    margin: 65px calc(6vw + 7%) 45px 7%;
+    min-height: 1000px;
+    padding: 25px;
+    background-image: url("img/background2.png");
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,system-ui,Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+article a{
+    text-decoration: none;
+    color: var(--theme-color);
+}
+article a:hover{
+    text-decoration: underline;
+}
+article h2, article h3{
+    font-weight: 500;
+}
+footer{
+    width: 60vw;
+    margin: auto;
+    background-color: rgba(5, 5, 5, 65%);
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+}
+h1{
+    margin: 13px 0;
+    white-space: nowrap;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-weight: 10;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+h1::first-letter, h2::first-letter, h3::first-letter{
+    color: var(--theme-color);
+}
+nav ul{
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul>li{
+    height: 25%;
+    background-color: rgba(0, 0, 0, 20%);
+    border: 1px solid rgb(70, 70, 70);
+    font-size: 25px;
+    font-family: "Courier New", monospace;
+}
+nav ul>li:last-child{border-radius: 0 0 25px 0;padding: 0}
+ul>li.current{
+    background-color: rgba(0, 0, 0, 50%);
+    border: 1px solid var(--theme-color);
+    padding: 5px;
+}
+ul>li.current:hover{
+    background-color: rgba(0, 0, 0, 50%);
+    color: silver;
+}
+nav li:hover{
+    background-color: rgba(255, 255, 255, 15%);
+    transition: background-color 1s;
+}
+#main-content{
+    height: 100%;
+}
+#add-content{
+    display: none;
+    position: relative;
+    z-index: 3;
+    right: 5px;
+    top: 1px;
+    width: calc(100% + 10px);
+    padding: 0 26px 5px 4px;
+    overflow: hidden;
+}
+ul>li:hover>#add-content{
+    display: block;
+}
+ol{
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 65%);
+    border: 1px #464646 solid;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px black;
+    border-top: 0;
+}
+ol>li{
+    border-bottom: 1px #464646 dashed;
+}
+ol>li:last-child{
+    border-bottom: none;
+    border-radius: 0 0 10px 10px;
+}
+nav li a{
+    color: silver;
+    display: block;
+    height: 100%;
+    padding: 5px;
+    text-decoration: none;
+}
+ol a{
+    font-size: 16px;
+}
+nav li img{
+    height: 57px;
+    display: inline-block;
+}
+#center-header{
+    display: inline-block;
+    width: 220px;
+    padding: 0 10px;
+}
+#left-header{
+    display: inline-block;
+    text-align: right;
+    width: calc(50% - 110px);
+}
+#right-header{
+    display: inline-block;
+    text-align: left;
+    width: calc(50% - 110px);
+}
+#center-header>span{
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: rotate(225deg);
+    top: -120px;
+    background-color: rgb(30, 30, 30);
+    border: double var(--theme-color);
+    border-top-left-radius: 30px;
+    box-shadow: 0 0 15px 1px black;
+}
+#center-header img{
+    display: block;
+    position: relative;
+    transform: rotate(-225deg);
+    width: 35%;
+    top: 20px;
+    left: 20px;
+}
+svg{
+    position: relative;
+    top: 6px;
+    height: 45px;
+}
+svg > *{
+    stroke: silver;
+    stroke-width: 3px;
+    fill: rgb(20, 20, 20);
+}
+figure{
+    float: left;
+    width: 33%;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 50%);
+    border: 1px solid rgb(70, 70, 70);
+    border-right: var(--theme-color) 2px solid;
+    border-bottom: var(--theme-color) 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    transition: box-shadow 0.5s;
+    color: silver;
+}
+figure>img{
+    width: 100%;
+    display: block;
+}
+figcaption{
+    padding: 10px;
+    text-align: center;
+}
+.gallery-image{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+.gallery-image figure{
+    background-color: #151313;
+}
+.gallery-image>a{
+    text-decoration: none;
+}
+article h2{
+    text-align: center;
+    font-size: 40px;
+}
+article h3{
+    font-size: 30px;
+}
+.text-image, .board{
+    float: left;
+    width: 33%;
+    margin-right: 20px;
+    box-shadow: black 0 0 5px;
+    border: 1px solid rgb(70, 70, 70);
+    border-right: var(--theme-color) 2px solid;
+    border-bottom: var(--theme-color) 2px solid;
+    border-radius: 20px;
+}
+.piece{
+    position: relative;
+    top: 10px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 50%;
+}
+.board{
+    float: none;
+    width: 50%;
+    margin: 20px 25%;
+}
+.cboth{
+    clear: both;
+}
+
+

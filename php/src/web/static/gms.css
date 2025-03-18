@@ -1,0 +1,72 @@
+table
+{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    color: silver;
+    background-color: rgba(255, 255, 255, 5%);
+    box-shadow: 0 0 5px black;
+}
+tr.data:hover
+{
+    background-color: rgba(255, 255, 255, 55%);
+    transition: background-color 0.5s ease-in;
+    color: black;
+}
+th, td
+{
+    border: 1px solid rgb(70, 70, 70);
+    padding: 5px 15px;
+    max-height: 150px;
+    text-align: center;
+}
+th{
+    background-color: rgb(0, 0, 0, 60%);
+}
+td.photo
+{
+    background-color: rgba(0, 0, 0, 25%);
+}
+.gm
+{
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    border: 1px solid silver;
+    border-radius: 50%;
+}
+.flag
+{
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    height: 45px;
+    width: 70px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+#table-container{
+    overflow-x: hidden;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 1200px){
+    .gallery-image{width: 50%;}
+}
+@media only screen and (max-width: 900px){
+    .gallery-image{width: 100%;}
+    .gallery-image{width: 100%;}
+}
+@media only screen and (max-width: 850px){
+    .gallery-image{width: 50%;}
+}
+@media only screen and (max-width: 600px){
+    .gallery-image{width: 100%;}
+}
+.ui-tooltip{
+    padding: 5px;
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(70, 70, 70);
+    color: silver;
+}
