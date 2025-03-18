@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/pngfromsvg/knight.png" type="image/x-icon">
+    <title>Szachy</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style-uni.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style-media.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='autosize.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "input[type='radio']" ).checkboxradio();
+        } );
+    </script>
+    <style>
+        html{--theme-color: darkgoldenrod;}
+    </style>
+</head>
+<body>
+    <img src="img/background.jpg" alt="none" id="background-image">
+    <div id="div-top">
+        <header style="text-align: center">
+            <h1 id="left-header">GRA W</h1
+            ><h1 id="center-header">
+                <span><img src="img/pngfromsvg/knight.png" alt="logo"></span>
+            </h1
+            ><h1 id="right-header">SZACHY</h1>
+        </header>
+    </div>
+    <div id="div-left">
+        <div style="overflow: hidden;height: 700px">
+            <nav>
+                <ul>
+                    <li class="current">
+                        <img src="img/home.png" alt="logo"><br><span>Strona Głowna</span>
+                    </li>
+                    <li>
+                        <a href="rules.html"><img src="img/rules.png" alt="logo"><br><span>Zasady Gry</span></a>
+                    </li>
+                    <li>
+                        <a href="gallery.html"><img src="img/galeria.png" alt="logo"><br><span>Galeria Zdjęć</span></a>
+                    </li>
+                    <li>
+                        <div id="main-content">
+                            <a href="grandmasters.html">
+                                <img src="img/cup.png" alt="logo"><br>
+                                <span>Najlepsi Szachiści</span>
+                            </a>
+                        </div>
+                        <div id="add-content">
+                            <ol>
+                                <li>
+                                    <a href="grandmasters.html#fischer"><span>Robert James</span> Fischer</a>
+                                </li>
+                                <li>
+                                    <a href="grandmasters.html#kasparov"><span>Garry</span> Kasparov</a>
+                                </li>
+                                <li>
+                                    <a href="grandmasters.html#carlsen"><span>Magnus</span> Carlsen</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="div-right">
+        <article>
+            <h2 style="display: none">article</h2>
+            <section>
+                <h2>Szachy-moje hobby</h2>
+                <figure>
+                    <img src="img/zestaw.jpeg" alt="zestaw" >
+                    <figcaption>zestaw do gry w szachy</figcaption>
+                </figure>
+                <p>
+                    Szachy to gra planszowa dla dwóch graczy. Czasami nazywa się go szachami zachodnimi lub szachami międzynarodowymi,
+                    aby odróżnić go od pokrewnych gier, takich jak xiangqi (szachy chińskie) i shogi (szachy japońskie). Obecna forma
+                    gry pojawiła się w Hiszpanii i reszcie Europy Południowej w drugiej połowie XV wieku po wyewoluowaniu z chaturanga,
+                    podobnej, ale znacznie starszej gry indyjskiego pochodzenia. Dziś szachy to jedna z najpopularniejszych gier na świecie,
+                    w którą grają miliony ludzi na całym świecie.
+                    Szachy to abstrakcyjna gra strategiczna, która nie zawiera żadnych ukrytych informacji. Gra się na szachownicy z
+                    64 kwadratami ułożonymi w siatkę osiem na osiem. Na początku każdy gracz kontroluje szesnaście figur : jednego króla,
+                    jedną damę, dwie wieże, dwóch gońców, dwóch skoczków i osiem pionków. Gracz, który się porusza jako pierwszy kontroluje
+                    białe pionki, a drugi kontroluje czarne pionki. Celem gry jest zamatowanie króla przeciwnika, przez co król jest natychmiast
+                    atakowany (w „ check") i nie ma możliwości ucieczki. Istnieje również kilka sposobów, w jakie gra może zakończyć się remisem.
+                    Szachy zorganizowane powstały w XIX wieku. Rywalizacja szachowa jest dziś zarządzana na arenie międzynarodowej przez FIDE
+                    (Międzynarodowa Federacja Szachowa). Pierwszy powszechnie uznany mistrz świata w szachach Wilhelm Steinitz zdobył tytuł w
+                    1886 roku. <a href="grandmasters.html#carlsen">Magnus Carlsen</a> jest aktualnym mistrzem świata. Ogromna teoria szachów rozwinęła się od samego początku gry.
+                    Aspekty sztuki można znaleźć w szachowej kompozycji, a szachy z kolei wpłynęły na zachodnią kulturę i sztukę oraz mają
+                    powiązania z innymi dziedzinami, takimi jak matematyka, informatyka i psychologia.
+                    Jednym z celów wczesnych informatyków było stworzenie maszyny do gry w szachy.
+                    W 1997 roku Deep Blue został pierwszym komputerem, który pokonał aktualnego mistrza
+                    świata w meczu, pokonując Garry'ego Kasparowa. Dzisiejsze silniki szachowe są znacznie silniejsze od
+                    najlepszych ludzkich graczy i mają głęboki wpływ na rozwój teorii szachów.
+                </p>
+                <div class="cboth"></div>
+            </section>
+            <section>
+                <h3>Historia szachów</h3>
+                <figure>
+                    <img src="img/medival-chess.jpg" alt="partia" >
+                    <figcaption>partia szachów</figcaption>
+                </figure>
+                <p>
+                    Za kolebkę szachów uznawane są Indie. Według źródeł pisanych gra ta była już znana w Persji na dworze szacha Chosrowa I Anoszirwana w latach 70. VI wieku naszej ery, gdzie przywieziona została w darze od indyjskiego radży. Indyjska czaturanga została w Persji przekształcona w czatrang, a po opanowaniu tego kraju przez Arabów uległa kolejnym przemianom (przede wszystkim zrezygnowano z losowania poruszającej się figury za pomocą kostki), po których powstał szatrandż. Kolejna ewolucja nastąpiła po pojawieniu się gry w Europie, nastąpiły wówczas zmiany najbardziej przypominające współczesną grę w szachy (zmieniono reguły gry, dopracowano zasady poruszania się bierek, pojawiły się dodatkowo roszada, mat, promocja, itp)
+                    Z Sycylii i południowej części Półwyspu Iberyjskiego szachy zostały przeniesione do Włoch i Hiszpanii, a następnie do Francji, Niemiec, Anglii i Skandynawii, gdzie były znane w X–XI wieku. W tym również czasie pojawiły się w Czechach, przywiezione przez kupców podążających z Włoch na północ kontynentu. Na Rusi szachy pojawiły się prawdopodobnie wcześniej, ok. VIII–IX wieku, bezpośrednio ze Wschodu (Iranu i środkowej Azji). Na ziemie polskie trafiły na kilka sposobów: z Czech, poprzez morskie szlaki handlowe oraz z Rusi Kijowskiej. O kultowym wymiarze gry szachowej informuje komediowy poemat Szachy Jana Kochanowskiego odkrywający charakterystyczne dla Polski nazwy i interpretacje figur szachowych. Zgodnie z Kochanowskim była to gra królewska, choć uwielbiali ją też szlachcice i mieszczanie. Interesujące jest też wspomnienie o mistrzach, „starszych”, którzy poznali szachy na poziomie wręcz ezoterycznym.
+                    W epoce renesansu nastąpił „złoty okres” szachów, szczególnie w Hiszpanii i Włoszech, swój rozkwit osiągając na przełomie XVI i XVII wieku. Gra praktyczna stała już wówczas na wysokim poziomie, głównie dzięki analizom Gioachino Greco, Ruya Lopeza i Alessandro Salvio. Pojawiły się pierwsze podręczniki, a pojedynki mistrzów wzbudzały zainteresowanie coraz szerszych grup społecznych. Zaczęto rozgrywać pierwsze mecze i niezbyt licznie obsadzone turnieje. Powstawało coraz więcej ośrodków życia szachowego, klubów i towarzystw. W połowie XVIII w. pojawiły się dwie indywidualności, od których rozpoczął się nowy etap rozwoju teorii i praktyki szachowej: François Philidor i Filip Stamma. Pierwszy był autorem fundamentalnej Analizy gry w szachy, drugi propagował szachy na terenie Francji i Anglii. W wielu krajach pojawili się nowi mistrzowie – w Anglii Howard Staunton, w Rosji Aleksander Pietrow, we Francji Louis de la Bourdonnais, w Niemczech Adolf Anderssen, a w Stanach Zjednoczonych Paul Morphy – tocząc boje o nieoficjalny tytuł mistrza świata. W 1886 rozegrano pierwszy oficjalny mecz o tytuł mistrza świata między polskim szachistą Johannesem Zukertortem (nieoficjalnym mistrzem świata) a Wilhelmem Steinitzem, którego zwycięzcą został Steinitz. Przez następne 100 lat zasady wyłaniania najsilniejszego szachisty globu zmieniały się wielokrotnie, a kolejnymi mistrzami byli Emanuel Lasker, Jose Raul Capablanca, Aleksander Alechin, Max Euwe, Michaił Botwinnik (pierwszy mistrz świata wyłoniony w oficjalnych rozgrywkach pod egidą powstałej w 1924 Międzynarodowej Federacji Szachowej – FIDE), Wasilij Smysłow, Michaił Tal, Tigran Petrosjan, Borys Spasski, <a href="grandmasters.html#fischer">Bobby Fischer</a>, Anatolij Karpow oraz <a href="grandmasters.html#kasparov">Garri Kasparow</a>. W latach 1993–2006 nastąpił rozłam w systemie wyłaniania mistrza świata, w okresie tym wyłaniano dwóch mistrzów, organizacji FIDE oraz PCA (później Braingames). W 2006 odbył się mecz unifikacyjny, a kolejnym mistrzem został Władimir Kramnik. Od 2007 do 2013 tytuł najlepszego szachisty świata należał do Viswanathana Ananda, a od listopada 2013 do Magnusa Carlsena.
+                    Pierwszy wielki międzynarodowy turniej rozegrano w 1851 w Londynie, a jego zwycięzcą został Adolf Anderssen. W 1924 powstała Międzynarodowa Federacja Szachowa i od tego roku rozgrywane są szachowe olimpiady. Od 1927 odbywają się mistrzostwa świata kobiet (pierwszą mistrzynią była Vera Menchik). W kolejnych latach pojawiły się mistrzostwa świata juniorów, studentów, w szachach korespondencyjnych, zaczęto organizować mistrzostwa kontynentów, zarówno indywidualnie, jak i drużynowo. W 1929 odbyły się pierwsze drużynowe, a w 1926 pierwsze indywidualne mistrzostwa Polski w szachach (zwyciężył w nich Dawid Przepiórka). Indywidualne mistrzostwa rozegrano przed wojną w sumie 4 razy: w 1926 w Warszawie, w 1927 w Łodzi, w 1935 w Warszawie i w 1937 w Juracie.
+                    W drugiej połowie XX wieku można już było zagrać w szachy z komputerem, a później również poprzez Internet. W dniu 6 czerwca 1970 dwóch radzieckich kosmonautów, Andrijan Nikołajew i Witalij Siewastjanow, rozegrało pierwszą w historii partię szachową pomiędzy szachistami przebywającymi w przestrzeni kosmicznej a ich kolegami na Ziemi.
+                </p>
+            </section>
+            <section>
+                <h3>Fide</h3>
+                <figure>
+                    <img src="img/fide.png" alt="fide">
+                    <figcaption>logo FIDE</figcaption>
+                </figure>
+                <p>
+                    Międzynarodowa Federacja Szachowa (fr. Fédération Internationale des Échecs, FIDE) –
+                    utworzona 20 lipca 1924 roku w Paryżu organizacja międzynarodowa, zrzeszająca narodowe związki szachowe z
+                    całego świata, w tym Polski Związek Szachowy. Mottem FIDE jest Gens una sumus (łac. Jesteśmy jedną rodziną).
+                    Od 2018 na czele FIDE stoi Arkadij Dworkowicz, były wicepremier Federacji Rosyjskiej.
+                    Do głównych zadań FIDE należy: definiowanie i ujednolicanie reguł gry w szachy oraz zasad rozgrywania
+                    międzynarodowych zawodów szachowych, obliczanie rankingu szachistów, przyznawanie tytułów (zobacz arcymistrz)
+                    szachistom oraz sędziom szachowym. Federacja organizuje najważniejsze zawody szachowe o zasięgu światowym, w tym
+                    indywidualne mistrzostwa świata oraz olimpiady szachowe, patronuje lub nadzoruje rozgrywanie niektórych turniejów
+                    międzynarodowych z udziałem najsilniejszych szachistów świata. Ogromna większość międzynarodowych zawodów szachowych
+                    odbywa się na zasadach określonych przez FIDE. Rozgrywki o zasięgu krajowym są organizowane w oparciu o przepisy
+                    narodowych związków szachowych, które z założenia nie mogą być sprzeczne z przepisami FIDE.
+                    FIDE powstała na wniosek sekretarza Francuskiej Federacji Pierre Vincenta, a wśród 15 państw
+                    (Anglia, Argentyna, Belgia, Czechosłowacja, Finlandia, Francja, Holandia, Włochy, Jugosławia,
+                    Kanada, Węgry, Rumunia, Hiszpania, Szwajcaria), które zakładało FIDE była także Polska (reprezentowana przez Izaaka Towbina).
+                    W 1928 w Hadze FIDE jako pierwsza organizacja sportowa podjęła historyczną decyzję – zrównała prawa amatorów i zawodowców.
+                    Początkowo FIDE była dość słabą organizacją, ponieważ Związek Radziecki z przyczyn politycznych odmówił przystąpienia do
+                    federacji. Sytuacja uległa zmianie w 1946 roku, po śmierci ówczesnego mistrza świata Aleksandra Alechina FIDE przystąpiła do
+                    organizacji turnieju w celu wyłonienia następcy. Po trudnych negocjacjach radziecki związek szachowy dołączył do federacji,
+                    z wieloma zastrzeżeniami dotyczącymi przyszłego kształtu tej organizacji.
+                    W 1948 roku odbył się turniej o mistrzostwo świata, w którym zwyciężył Michaił Botwinnik. Od tego czasu aż do 1993 roku
+                    mistrz świata był wyłaniany w oficjalnych meczach organizowanych przez FIDE. Ustalono wielostopniowe eliminacje (turnieje
+                    strefowe, międzystrefowe i mecze kandydatów), których zwycięzca uzyskuje prawo gry z mistrzem świata.
+                    Działalność FIDE w zakresie organizacji meczów o tytuł mistrza świata wywoływała wiele kontrowersji. W 1975 Bobby Fischer
+                    nie przystąpił do meczu z pretendentem, skutkiem czego Anatolij Karpow został uznany za jego następcę. W 1984 roku prezydent
+                    Florencio Campomanes przerwał mecz pomiędzy Karpowem i Garrim Kasparowem bez wyłonienia zwycięzcy. Kontrowersje
+                    wzbudzała również działalność następcy Campomanesa, Ilumżynowa, oskarżanego m.in. o niedotrzymywanie obietnic finansowych.
+                    W 1993 narastający konflikt pomiędzy FIDE a ówczesnym mistrzem świata Kasparowem doprowadził do rozłamu. Kasparow i pretendent
+                    Nigel Short, wyłoniony w eliminacjach zorganizowanych przez FIDE, założyli nową organizację PCA, pod auspicjami której
+                    rozegrali mecz, wygrany przez Kasparowa. Od tego czasu rozgrywki o tytuł mistrza świata organizowane były dwutorowo, przez
+                    FIDE oraz organizacje zakładane przez Kasparowa. Dopiero w roku 2006 doszło do zunifikowanego meczu o tytuł mistrza świata,
+                    w wyniku którego Władimir Kramnik został oficjalnym mistrzem świata w szachach.
+                    Od 1953 FIDE prowadzi Złotą księgę FIDE, która zawiera m.in. nazwiska zawodników, działaczy, sędziów, którzy odegrali ważną
+                    rolę w historii szachów.
+                    FIDE dopuszcza międzynarodowe drużyny niesłyszących (ICSC), niewidomych (IBCA), niepełnosprawnych z dysfunkcją narządu ruchu
+                    (IPCA) na prawach państwa, do rozgrywek olimpijskich.
+                    W 1999 FIDE została oficjalnie uznana przez Międzynarodowy Komitet Olimpijski. Dwa lata później federacja przyjęła
+                    przepisy antydopingowe MKOl. Istnieją plany włączenia szachów do Igrzysk Olimpijskich.
+                    Według stanu na 18 czerwca 2014 roku, FIDE zrzeszała 181 krajowych federacji (54 federacje z Europy, 51 federacji z
+                    Azji, 42 federacje z Afryki, 34 federacje z Ameryki).
+                    Najwyższym organem organizacji jest Kongres, organizowany co roku (z wyjątkiem tzw. Kongresów nadzwyczajnych, które
+                    mogą zostać zwołane na wniosek Prezydenta FIDE). W Polsce odbyły się dwa Kongresy, w 1935 w Warszawie oraz w 2011 w
+                    Krakowie (82. edycja).
+                    W dniu powstania FIDE – 20 lipca jest obchodzony Międzynarodowy Dzień Szachów.
+                </p>
+                <div class="cboth"></div>
+            </section>
+            <section>
+                <h3>Ankieta</h3>
+                <fieldset>
+                    <legend>Znajomość szachów</legend>
+                    <form action="receive.php" method="post">
+                        <label for="name">Imię i nazwisko: </label>
+                        <input type="text" name="name" id="name" required placeholder="tu wpisz imie i nazwisko">
+                        <br>
+                        <label for="email">Adres e-mail: </label>
+                        <input type="email" name="email" id="email" placeholder="tu wpisz swój email">
+                        <br>
+                        Płeć:
+                        <label for="female">👩</label>
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="male">👨</label>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <br>
+                        <label for="data">Data Urodzenia:</label>
+                        <input type="date" name="birth-date" max="2022-06-30" id="data" required>
+                        <br>
+                        <label for="figura">Ulubiona figura:</label>
+                        <select name="piece" id="figura">
+                            <option value="pawn">pionek</option>
+                            <option value="knight">skoczek</option>
+                            <option value="bishop">goniec</option>
+                            <option value="rook">wieża</option>
+                            <option value="queen">hetman</option>
+                            <option value="king">król</option>
+                        </select>
+                        <br>
+                        <label for="number">Ranking ELO:</label>
+                        <input type="number" name="ELO" id="number" value="1000">
+                        <br><br>
+                        <label for="desc">Jak oceniasz swoje umiejętności gry w szachy?:</label><br>
+                        <textarea rows="5" name="description" id="desc" required placeholder="np. śridnio-zaawansowany, początkujący, brak styczności itp."></textarea>
+                        <br>
+                        <input type="reset">
+                        <input type="submit">
+                    </form>
+                </fieldset>
+            </section>
+        </article>
+    </div>
+    <div id="div-bottom">
+        <footer>
+            <h1 style="display: inline-block">SZACHY</h1
+            ><svg viewBox="0 0 140 110">
+                <circle r="20" cx="70" cy="21"/>
+                <polygon points="60,45 80,45 90,95 50,95"/>
+                <rect x="50" y="35" rx="10" ry="10" width="40" height="20"/>
+                <rect x="30" y="90" rx="20" ry="20" width="80" height="25"/>
+                <polyline points="30,108 110,108"/>
+            </svg>
+        </footer>
+    </div>
+    <script>
+        autosize($('textarea'));
+    </script>
+</body>
+</html>
